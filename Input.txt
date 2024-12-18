@@ -1,0 +1,10 @@
+ofstream out("D:\\File Handling\\a.txt", ios::out);
+ifstream in("D:\\File Handling\\BSCS.txt", ios::in);
+if(out.fail() == true || in.fail() == true)
+{
+cout<<"file not found"<<endl;
+exit(1);
+}
+char ch[1000], maxch[100];
+in>>maxch;
+int maxlen = strlen(ch);
